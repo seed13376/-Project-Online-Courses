@@ -47,4 +47,35 @@ body {
     font-weight: 400;
 }
 
+.container {
+    max-width: 1270px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+}
 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 22px;
+    object-fit: cover;
+}
+
+.nav {
+    margin-left: 60px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
