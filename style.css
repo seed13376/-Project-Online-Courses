@@ -42,9 +42,35 @@
     --first-family: "Lato", sans-serif;
 }
 
+:root {
+    --white: #fff;
+    --primary: #ff3f3a;
+    --secondary: #ffcf2d;
+    --success: #03cea4;
+    --danger: #ff4242;
+    --warning: #f89828;
+    --info: #5a87fc;
+    --gray-900: #1e212c;
+    --gray-800: #424551;
+    --gray-700: #787a80;
+    --gray-600: #9a9ca5;
+    --gray-500: #b3b7bc;
+    --gray-400: #d7dadd;
+    --gray-300: #e5e8ed;
+    --gray-200: #f4f5f6;
+}
+
 body {
     font-family: var(--first-family);
     font-weight: 400;
+}
+
+.header {
+    background-image: url(public/images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1920px;
 }
 
 .container {
@@ -57,6 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 
 .logo__nav {
@@ -78,6 +105,13 @@ body {
     display: flex;
     align-items: center;
     gap: 0 36px;
+}
+
+.user__consultation {
+    width: 206px;
+    height: 52px;
+    background: linear-gradient(45deg, #ff3f3a, #f75e05);
+    color: var(--white);
 }
 
 .user__container-register {
