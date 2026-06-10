@@ -166,7 +166,7 @@ body {
 
 .bg__header{
     position: absolute;
-    right: 289px;
+    right: 346px;
     top: 196px;
     /*margin-inline: auto;*/
 }
@@ -232,7 +232,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;*/
-    border-radius: inherit;
+    border-radius: 4px;
     padding: 1px;
     background: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
     mask: linear-gradient(#fff 0 0) content-box,
@@ -301,4 +301,99 @@ body {
     border: none;
 }
 
+#main__course-information {
+	margin-top: 241px;
+}
 
+.heading__title-small {
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--gray-900);
+	margin-bottom: 8px;
+}
+
+.heading__title-big {
+	font-family: var(--first-family);
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: var(--gray-900);
+}
+
+.text__course-offer {
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: var(--gray-900);
+	margin-bottom: 24px;
+}
+
+.text__course-offer {
+	font-family: var(--first-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: var(--gray-800);
+}
+
+.btn__container-main {
+	display: flex;
+	align-items: center;
+	gap: 0 24px;
+	margin-top: 60px;
+}
+
+.btn__events {
+	width: 192px;
+	height: 52px;
+	padding: 0 40px;
+	border-radius: none;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+	background: linear-gradient(45deg,  #FF3F3A 0%, #F75E05 100%);
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 325%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	background-clip: text;
+	mask-clip: text;
+	color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btn__events::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 4px;
+	padding: 1px;
+	background: linear-gradient(45deg,  #FF3F3A 0%, #F75E05 100%);
+	mask: linear-gradient(#fff 0 0 ) content-box,
+	linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+}
+
+.view__btn {
+	width: 192px;
+	height: 52px;
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 325%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--white);
+	background: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	
+}
