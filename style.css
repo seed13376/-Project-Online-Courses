@@ -664,7 +664,7 @@ body {
 	font-size: 16px;
 	line-height: 160%;
 	color: var(--gray-900);
-	text-align: center;	
+	text-align: center;
 }
 
 .description__link:hover {
@@ -699,8 +699,8 @@ body {
 }
 
 .img__certificate {
-	max-width: 705px;
-	max-height: 500px;
+	width: 705px;
+	height: 500px;
 	position: absolute;
 	right: 345px;
 	z-index: -2;
@@ -743,10 +743,20 @@ body {
 	margin-top: 32px;
 }
 
+#team__profiles {
+	margin-top: 120px;
+}
+
 .container__btn-title {
 	display: flex;
 	align-items: center;
 	gap: 0 15px;
+}
+
+.profile__img-button {
+	width: 18px;
+	height: 11px;
+	object-fit: cover;
 }
 
 .come__back-forward {
@@ -758,4 +768,87 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*margin-inline: auto 0;*/
 }
+
+.title__btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container__title-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.small__title-profile {
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--gray-900);
+}
+
+.big__title-profile {
+	font-family: var(--first-family);
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	text-align: center;
+	color: var(--gray-900);
+}
+
+.team__profile-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0 30px;
+	margin-top: 60px;
+}
+
+.img-profile {
+	width: 245px;
+	height: 320px;
+	position: relative;
+}
+
+.bg__img-profile {
+	width: 285px;
+	height: 340px;
+	background: var(--secondary);
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+}
+
+.img-profile:hover {
+	/*content: "";*/
+	position: absolute;
+	bottom: 10px;
+	/*display: flex;
+	align-items: flex-end;
+	justify-content: center;*/
+	cursor: pointer;
+	background-image: linear-gradient(
+		to top bottom,
+		30%,
+		#1e212c 44%,
+		#1e212c 55%,
+		#1e212c 69%,
+		#1e212c 76%,
+		#1e212c 84%,
+		#1e212c 91%,
+		#1e212c 100%
+	);
+}
+
+/*.bg__img-profile:hover .container__socials {
+
+}*/
