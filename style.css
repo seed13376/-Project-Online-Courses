@@ -811,10 +811,11 @@ body {
 	margin-top: 60px;
 }
 
-.img-profile {
+.img__profile {
 	width: 245px;
 	height: 320px;
-	position: relative;
+	z-index: 2;
+	/*display: hidden;*/
 }
 
 .bg__img-profile {
@@ -826,29 +827,70 @@ body {
 	justify-content: center;
 	align-items: flex-end;
 	position: relative;
+	z-index: 1;
 }
 
-.img-profile:hover {
-	/*content: "";*/
+.bg__img-profile:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	bottom: 10px;
-	/*display: flex;
-	align-items: flex-end;
-	justify-content: center;*/
+	bottom: 0;
+	left: 0;
 	cursor: pointer;
-	background-image: linear-gradient(
-		to top bottom,
-		30%,
-		#1e212c 44%,
-		#1e212c 55%,
-		#1e212c 69%,
-		#1e212c 76%,
-		#1e212c 84%,
-		#1e212c 91%,
+	z-index: 3;
+	background: linear-gradient(
+		180deg,
+		rgba(30, 33, 44, 0) 43.9%,
+		rgba(30, 33, 44, 0.03) 55.21%,
+		rgba(30, 33, 44, 0.33) 68.73%,
+		rgba(30, 33, 44, 0.56) 76.17%,
+		rgba(30, 33, 44, 0.77) 83.75%,
+		rgba(30, 33, 44, 0.92) 91.49%,
 		#1e212c 100%
 	);
+	opacity: 0;
+	transition:
+		opacity,
+		0.3s ease;
+		/*display: hidden;*/
 }
 
-/*.bg__img-profile:hover .container__socials {
+.bg__img-profile:hover::before {
+	opacity: 1;	
+}	
 
+
+.bg__img-profile .img__socials {
+	display: hidden;
+	z-index: 4;
+	/*width: 20px;
+	height: 20px;*/
+	position: relative;
+}
+
+.bg__img-profile .img__socials:hover::before {
+	content: "";
+	z-index: 5;
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 181px;
+	/*width: 100%;
+	height: 100%;*/
+	cursor: pointer;
+	background: var(--white);
+}
+
+ /*.container__img-socials .img__socials:hover::before  {
+	content: "";
+	z-index: 5;
+	display: hidden;
+	position: absolute;
+	bottom: 20px;
+	left: 181px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: var(--white);
 }*/
