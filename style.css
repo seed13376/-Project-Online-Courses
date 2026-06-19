@@ -654,7 +654,7 @@ body {
 .container__description-link {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	gap: 0 11px;
 }
 
@@ -666,13 +666,24 @@ body {
 	color: var(--gray-900);
 	text-align: center;
 }
-
+	
 .description__link:hover {
 	font-family: var(--first-family);
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 160%;
 	color: var(--primary);
+	opacity: 0;
+	transition: opacity, .3s ease;
+}
+
+.description__link:hover {
+	opacity: 1;
+}
+
+.container__link-img {
+	display: flex;
+	align-items: center;
 }
 
 #course__certificate {
@@ -815,7 +826,6 @@ body {
 	width: 245px;
 	height: 320px;
 	z-index: 2;
-	/*display: hidden;*/
 }
 
 .bg__img-profile {
@@ -851,46 +861,37 @@ body {
 	);
 	opacity: 0;
 	transition:
-		opacity,
+		all,
 		0.3s ease;
-		/*display: hidden;*/
 }
 
 .bg__img-profile:hover::before {
-	opacity: 1;	
-}	
+	opacity: 1;
+}
 
+.container__socials {
+	display: none;
+}
 
-.bg__img-profile .img__socials {
-	display: hidden;
+.bg__img-profile .container__socials {
+	display: none;
 	z-index: 4;
-	/*width: 20px;
-	height: 20px;*/
 	position: relative;
 }
 
-.bg__img-profile .img__socials:hover::before {
-	content: "";
+.bg__img-profile:hover .container__socials {
 	z-index: 5;
-	display: block;
+	display: flex;
+	align-items: center;
+	gap: 15px;
 	position: absolute;
 	bottom: 20px;
 	left: 181px;
-	/*width: 100%;
-	height: 100%;*/
 	cursor: pointer;
-	background: var(--white);
+	opacity: 0;
+	transition: opacity 300ms;
 }
 
- /*.container__img-socials .img__socials:hover::before  {
-	content: "";
-	z-index: 5;
-	display: hidden;
-	position: absolute;
-	bottom: 20px;
-	left: 181px;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	background: var(--white);
-}*/
+.bg__img-profile:hover .container__socials {
+	opacity: 1;
+}
