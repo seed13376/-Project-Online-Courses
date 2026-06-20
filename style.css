@@ -761,6 +761,7 @@ body {
 .container__btn-title {
 	display: flex;
 	align-items: center;
+	flex-shrink: 2;
 	gap: 0 15px;
 }
 
@@ -770,16 +771,22 @@ body {
 	object-fit: cover;
 }
 
-.come__back-forward {
+.come__back {
 	width: 48px;
 	height: 48px;
 	border-radius: 99999px;
+	background: var(--white);
+}
+
+.come__back-forward {
+	min-width: 48px;
+	min-height: 48px;
+	border-radius: 99999px;
 	cursor: pointer;
-	background-color: var(--primary);
+	background: var(--primary);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*margin-inline: auto 0;*/
 }
 
 .title__btn {
@@ -894,4 +901,93 @@ body {
 
 .bg__img-profile:hover .container__socials {
 	opacity: 1;
+}
+
+.name__user-profile {
+	text-align: center;
+	font-family: var(--first-family);
+	font-family: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: var(--gray-800);
+	margin: 16px 0 0 0;
+}
+
+.text__specialty-profile {
+	text-align: center;
+	font-family: var(--first-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: var(--gray-700);
+	margin: 4px 0 0 0;
+}
+
+#student__reviews {
+	position: relative;
+	margin: 180px 0 0 0;
+}
+
+.bg__img-review {
+	position: absolute;
+	top: 145px;
+	left: 145px;
+	right: 0;
+	bottom: 0;
+}
+
+.container__student-review {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container__bg-reviews {
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	margin: 60px 84px 60px 84px;
+}
+
+.review {
+	max-width: 752px;
+	font-family: var(--first-family);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: var(--gray-800);
+}
+
+.container__avatar-student {
+	margin: 24px 0 0 0;
+	flex-wrap: wrap;
+}
+
+.container__avatar-name {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+}
+
+.name__user-review {
+	margin: 35px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px 0;
+}
+
+.name__user {
+	font-family: var(--first-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 160%;
+	color: var(--gray-900);
+}
+
+.position__course {
+	font-family: var(--first-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--gray-700);
 }
